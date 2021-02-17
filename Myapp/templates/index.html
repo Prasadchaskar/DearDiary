@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<div class="container">
+{% for e in entry %}
+<div class="card text-center">
+  <div class="card-header">
+    {{e.id}}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{e.post_date}}</h5>
+    <p class="card-text">{{e.text}}</p>
+  </div>
+</div>
+<br>
+<br>
+</div>
+{% endfor %}
+
+{% endblock body %}
+
+
+

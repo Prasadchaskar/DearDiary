@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}Add Entry{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <div>
+        <form method="POST" action="">{% csrf_token %}
+            <div class="field">
+                {{ form.text }}
+            </div>
+            <div class="control">
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+{% endblock body %}
